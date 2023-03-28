@@ -4,28 +4,50 @@ $color-one: #ddd;
   width: 100%;
   text-align: center;
   position: relative;
-
-  &,
-  & img {
-    transition: all ease-in-out 0.5s;
-  }
+  padding: 10px;
 
   & img {
-    border-radius: 20px;
-    object-fit: cover;
-    overflow: hidden;
-  }
-
-  &:hover {
-    padding: 10px;
     border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+  }
+  border: 1px solid transparent;
+  &:hover {
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transform: scale(1.1);
-    background-color: #fff;
-    & img {
-      border-radius: 0px;
+
+    border: 1px solid #606060;
+  }
+}
+
+.wrapper-data-title-card {
+  display: flex;
+  flex-direction: row;
+  & img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  & > div {
+    text-align: right;
+    flex: 1;
+    color: #606060;
+    & h1 {
+      color: #0f0f0f;
+    }
+    & p {
+      margin: 0;
     }
   }
+}
+
+.wrapper-chip-duration-video {
+  position: absolute;
+  top: 62%;
+  right: 12px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
 }
