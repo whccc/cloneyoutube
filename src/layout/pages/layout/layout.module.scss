@@ -75,8 +75,14 @@
   left: 15px;
 }
 
-.wrapper-layout-carrito {
-  display: none;
+.wrapper-layout-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  i {
+    font-size: 25px;
+  }
 }
 .grid_container {
   display: grid;

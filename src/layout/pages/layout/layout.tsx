@@ -1,12 +1,13 @@
 import { Tooltip } from "react-tooltip";
 import css from "./layout.module.scss";
+import Router from "next/router";
 
 const Layout = ({ children }: { children: any }) => {
   return (
     <main>
       <Tooltip id="menu" />
       <Tooltip id="buscar" />
-      <Tooltip id="carrito" />
+      <Tooltip id="user" />
 
       <div className={css.wrapper_index}>
         <div className="wrapper_index_header_tab_1">
@@ -38,12 +39,17 @@ const Layout = ({ children }: { children: any }) => {
           </div>
         </div>
 
-        <div className="wrapper-layout-carrito">
+        <div
+          className="wrapper-layout-user"
+          onClick={() => {
+            Router.push("/user/login");
+          }}
+        >
           <i
-            data-tooltip-id="carrito"
-            data-tooltip-content="Carrito"
-            className="pi pi-cart-plus"
-            data-name="icon-carrito"
+            data-tooltip-id="user"
+            data-tooltip-content="Iniciar Sesión"
+            className="pi pi-user"
+            data-name="icon-user"
           ></i>
         </div>
       </div>

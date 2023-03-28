@@ -1,0 +1,12 @@
+.button-primary {
+  background-color: #6cd3ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+  width: 90px;
+  &:hover {
+    opacity: 0.9;
+  }
+}
