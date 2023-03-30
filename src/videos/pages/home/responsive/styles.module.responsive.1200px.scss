@@ -1,0 +1,7 @@
+@include responsive1200px() {
+  .wrapper-section-videos {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: auto;
+  }
+}

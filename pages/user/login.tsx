@@ -1,9 +1,9 @@
-import Login from "../../src/user/pages/login";
+import LoginP from "../../src/user/pages/login";
 
 const LoginPage = () => {
   return (
     <main>
-      <Login />
+      <LoginP />
     </main>
   );
 };

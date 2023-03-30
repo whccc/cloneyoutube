@@ -1,7 +1,6 @@
 import { Tooltip } from "react-tooltip";
-import css from "./layout.module.scss";
 import Router from "next/router";
-
+import stylesLayout from "./layout.styles.module.scss";
 const Layout = ({ children }: { children: any }) => {
   return (
     <main>
@@ -9,8 +8,8 @@ const Layout = ({ children }: { children: any }) => {
       <Tooltip id="buscar" />
       <Tooltip id="user" />
 
-      <div className={css.wrapper_index}>
-        <div className="wrapper_index_header_tab_1">
+      <div className={stylesLayout["wrapper_index"]}>
+        <div className={stylesLayout["wrapper_index_header_tab_1"]}>
           <i
             className={`pi pi-align-justify`}
             data-tooltip-id="menu"
@@ -21,17 +20,17 @@ const Layout = ({ children }: { children: any }) => {
           <h1>Whc</h1>
         </div>
 
-        <div className={css.wrapper_index_header_tab_2}>
+        <div className={stylesLayout["wrapper_index_header_tab_2"]}>
           <input
             type="text"
             placeholder="Buscar"
-            className={`wrapper_index_header_tab_2_input`}
+            className={stylesLayout["wrapper_index_header_tab_2_input"]}
           />
-          <div className={css.wrapper_search_input}>
+          <div className={stylesLayout["wrapper_search_input"]}>
             <i className={`pi pi-search `}></i>
           </div>
           <div
-            className={` ${css.wrapper_index_header_tab_2_i}`}
+            className={stylesLayout["wrapper_index_header_tab_2_i"]}
             data-tooltip-id="buscar"
             data-tooltip-content="Buscar"
           >
@@ -40,7 +39,7 @@ const Layout = ({ children }: { children: any }) => {
         </div>
 
         <div
-          className="wrapper-layout-user"
+          className={stylesLayout["wrapper-layout-user"]}
           onClick={() => {
             Router.push("/user/login");
           }}

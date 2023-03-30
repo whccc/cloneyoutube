@@ -4,3 +4,8 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
 }
+
+@import "../../../../styles/mixins/responsive.scss";
+@import "./responsive/styles.module.responsive.768px.scss";
+@import "./responsive/styles.module.responsive.992px.scss";
+@import "./responsive/styles.module.responsive.1200px.scss";

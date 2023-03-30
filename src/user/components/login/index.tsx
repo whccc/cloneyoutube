@@ -1,4 +1,9 @@
 import { useForm } from "react-hook-form";
+import styles from "./user.styles.module.scss";
+import inputsStyles from "../../../../styles/styles.global.inputs.module.scss";
+import labelsStyles from "../../../../styles/styles.global.labels.module.scss";
+import cardsStyles from "../../../../styles/styles.global.cards.module.scss";
+import buttonsStyles from "../../../../styles/styles.global.buttons.module.scss";
 
 const Login = () => {
   const {
@@ -10,25 +15,31 @@ const Login = () => {
     console.log(dataForm);
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit(submit)}>
-        <label className="label-form">Email</label>
-        <input
-          className="input-form"
-          type="text"
-          {...register("email", { required: true })}
-        />
-        <label className="label-form">Contraseña</label>
-        <input
-          type="password"
-          className="input-form"
-          {...register("password", { required: true })}
-        />
-        <button className="button-primary " type="submit">
-          Ingresar
-        </button>
-      </form>
-    </div>
+    <>
+      <div className={styles["wrapper-login"]}>
+        <form
+          onSubmit={handleSubmit(submit)}
+          className={cardsStyles["wrapper-card-form"]}
+        >
+          <label className={labelsStyles["label-form"]}>Email</label>
+          <input
+            className={inputsStyles["input-form"]}
+            type="text"
+            {...register("email", { required: true })}
+          />
+          <label className={labelsStyles["label-form"]}>Contraseña</label>
+          <input
+            type="password"
+            className={inputsStyles["input-form"]}
+            {...register("password", { required: true })}
+          />
+          <hr />
+          <button className={buttonsStyles["button-primary"]} type="submit">
+            Ingresar
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import styles from "./styles.module.scss";
 
 const SliderCategory = () => {
   const refWrapper = useRef<HTMLDivElement>(null);
@@ -47,7 +48,7 @@ const SliderCategory = () => {
     e.classList.add("select");
   };
   return (
-    <div className="wrapper-slider-category">
+    <div className={styles["wrapper-slider-category"]}>
       <div ref={refWrapperRefLeft}>
         <i
           onClick={rigth}
@@ -56,7 +57,7 @@ const SliderCategory = () => {
           ref={refLeft}
         ></i>
       </div>
-      <div className="wrapper-slider-content" ref={refWrapper}>
+      <div className={styles["wrapper-slider-content"]} ref={refWrapper}>
         {data.map((data, index) => (
           <div
             ref={(el) => (refItems.current[index] = el)}
