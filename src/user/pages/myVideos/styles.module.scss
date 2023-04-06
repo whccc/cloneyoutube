@@ -1,0 +1,8 @@
+.wrapper-content-videos {
+  display: grid;
+}
+
+@import "../../../../styles/mixins/responsive";
+@import "./responsive/styles.module.responsive.768px.scss";
+@import "./responsive/styles.module.responsive.992px.scss";
+@import "./responsive/styles.module.responsive.1200px.scss";

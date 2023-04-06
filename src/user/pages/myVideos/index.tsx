@@ -2,14 +2,15 @@ import LateralMenuAndContent from "../../../layout/pages/lateralMenuAndContent/i
 import Layout from "../../../layout/pages/layout/layout";
 import CardPreviewVideo from "../../../videos/components/CardPreviewVideos";
 import MenuUser from "../../components/Menu";
+import styles from "./styles.module.scss";
 
-const DashBoard = () => {
+const MyVideos = () => {
   return (
     <div>
       <Layout>
         <LateralMenuAndContent>
           <MenuUser />
-          <div>
+          <div className={styles["wrapper-content-videos"]}>
             <CardPreviewVideo />
             <CardPreviewVideo />
             <CardPreviewVideo />
@@ -29,4 +30,4 @@ const DashBoard = () => {
   );
 };
 
-export default DashBoard;
+export default MyVideos;

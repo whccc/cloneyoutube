@@ -2,9 +2,9 @@ import styles from "./style.module.scss";
 const CardPreviewVideo = () => {
   return (
     <div className={styles["wrapper-card"]}>
-      <img src="./gato.jpg" />
+      <img src="/gato.jpg" />
       <div className={styles["wrapper-data-title-card"]}>
-        <img src="./gato.jpg" />
+        <img src="/gato.jpg" />
         <div>
           <h1>Video prueba</h1>
           <p>2022/07/10</p>

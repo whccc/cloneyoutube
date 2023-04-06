@@ -1,9 +1,9 @@
-import DashBoard from "../../src/user/pages/dashboard";
+import MyVideos from "../../src/user/pages/myVideos";
 
 const IndexPage = () => {
   return (
     <div>
-      <DashBoard />
+      <MyVideos />
     </div>
   );
 };

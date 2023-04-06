@@ -1,0 +1,5 @@
+@include responsive1200px() {
+  .wrapper-content-videos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

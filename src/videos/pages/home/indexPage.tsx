@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <main>
       <SliderCategory />
-      <div className={styles["wrapper-section-videos"]}>
+      <div className={`${styles["wrapper-section-videos"]} `}>
         <CardPreviewVideo />
         <CardPreviewVideo />
         <CardPreviewVideo />
