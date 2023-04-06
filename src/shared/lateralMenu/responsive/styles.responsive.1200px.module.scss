@@ -1,0 +1,28 @@
+@include responsive1200px() {
+  .wrapper-menu {
+    position: relative;
+    &::before {
+      display: none;
+    }
+
+    & a {
+      display: flex !important;
+      flex-direction: row;
+    }
+  }
+  .show-menu {
+    & label {
+      opacity: 1;
+      transition: all ease-in-out 1s;
+    }
+  }
+  .hidden-menu {
+    width: 40px;
+    opacity: 1;
+
+    & label {
+      opacity: 0;
+      transition: all ease-in-out 0.1s;
+    }
+  }
+}

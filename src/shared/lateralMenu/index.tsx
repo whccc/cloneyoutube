@@ -1,6 +1,24 @@
 import styles from "./styles.module.scss";
-const Menu = ({ children }) => {
-  return <div className={styles["wrapper-menu"]}>{children}</div>;
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
+import { ReactNode } from "react";
+interface MenuProps {
+  children: ReactNode;
+}
+const Menu = ({ children }: MenuProps) => {
+  const isActiveMenu = useSelector(
+    (state: RootState) => state.menuActive.isActive
+  );
+
+  return (
+    <div
+      className={`${styles["wrapper-menu"]} ${
+        isActiveMenu ? "show-menu" : "hidden-menu"
+      }`}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Menu;

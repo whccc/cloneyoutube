@@ -1,7 +1,14 @@
 import { Tooltip } from "react-tooltip";
 import Router from "next/router";
 import stylesLayout from "./layout.styles.module.scss";
+import { useDispatch } from "react-redux";
+import { actionMenuShowOrHidden } from "../../../reducer/menuSlice";
 const Layout = ({ children }: { children: any }) => {
+  const dispatch = useDispatch();
+
+  const activeMenu = () => {
+    dispatch(actionMenuShowOrHidden());
+  };
   const navigationIndex = () => {
     Router.push("/");
   };
@@ -18,6 +25,7 @@ const Layout = ({ children }: { children: any }) => {
             data-tooltip-id="menu"
             data-tooltip-content="Menu"
             data-name="icon-menu"
+            onClick={activeMenu}
           ></i>
           <i
             className="pi pi-video"

@@ -1,0 +1,7 @@
+@include responsive1200px() {
+  .wrapper-layout-menu {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 80px);
+  }
+}

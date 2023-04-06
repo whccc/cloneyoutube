@@ -1,10 +1,18 @@
 $color-white: #fff;
+.show-menu {
+  opacity: 1;
+}
+.hidden-menu {
+  opacity: 0;
+  z-index: -1;
+}
 .wrapper-menu {
   position: fixed;
   background-color: $color-white;
   z-index: 2;
   height: 100%;
   width: 200px;
+  transition: all ease-in-out 0.5s;
   &::before {
     content: "";
     top: 0;
@@ -30,7 +38,13 @@ $color-white: #fff;
         & i {
           margin-right: 20px;
         }
+        & label {
+          white-space: nowrap;
+        }
       }
     }
   }
 }
+
+@import "../../../styles/mixins/responsive";
+@import "./responsive/styles.responsive.1200px.module.scss";
