@@ -1,11 +1,11 @@
 @include responsive768px() {
   .wrapper-layout-user {
-    display: block;
+    display: flex;
   }
 
   .wrapper_index_header_tab_1 {
     & h1 {
-      display: block;
+      display: flex;
     }
   }
 

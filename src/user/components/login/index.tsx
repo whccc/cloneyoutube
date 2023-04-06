@@ -27,12 +27,23 @@ const Login = () => {
             type="text"
             {...register("email", { required: true })}
           />
+          {errors.email && (
+            <label className={labelsStyles["label-error-form"]}>
+              Campo requerido...
+            </label>
+          )}
           <label className={labelsStyles["label-form"]}>Contraseña</label>
+
           <input
             type="password"
             className={inputsStyles["input-form"]}
             {...register("password", { required: true })}
           />
+          {errors.password && (
+            <label className={labelsStyles["label-error-form"]}>
+              Campo requerido..
+            </label>
+          )}
           <hr />
           <button className={buttonsStyles["button-primary"]} type="submit">
             Ingresar

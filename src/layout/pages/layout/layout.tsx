@@ -2,6 +2,9 @@ import { Tooltip } from "react-tooltip";
 import Router from "next/router";
 import stylesLayout from "./layout.styles.module.scss";
 const Layout = ({ children }: { children: any }) => {
+  const navigationIndex = () => {
+    Router.push("/");
+  };
   return (
     <main>
       <Tooltip id="menu" />
@@ -16,8 +19,12 @@ const Layout = ({ children }: { children: any }) => {
             data-tooltip-content="Menu"
             data-name="icon-menu"
           ></i>
-          <i className="pi pi-video" data-name="icon-video"></i>
-          <h1>Whc</h1>
+          <i
+            className="pi pi-video"
+            data-name="icon-video"
+            onClick={navigationIndex}
+          ></i>
+          <h1 onClick={navigationIndex}>Whc</h1>
         </div>
 
         <div className={stylesLayout["wrapper_index_header_tab_2"]}>

@@ -3,4 +3,10 @@
   .wrapper-layout-user {
     display: none;
   }
+
+  .wrapper_index_header_tab_1 {
+    i[data-name="icon-menu"] {
+      display: none;
+    }
+  }
 }
