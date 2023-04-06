@@ -11,6 +11,17 @@ const DashBoard = () => {
           <MenuUser />
           <div>
             <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
+            <CardPreviewVideo />
           </div>
         </LateralMenuAndContent>
       </Layout>

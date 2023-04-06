@@ -1,5 +1,6 @@
 @include responsive1200px() {
   .wrapper-layout-menu {
+    padding: 0;
     display: flex;
     flex-direction: row;
     min-height: calc(100vh - 80px);
