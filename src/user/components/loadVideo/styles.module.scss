@@ -1,0 +1,30 @@
+.wrapper-load-video {
+  margin: auto;
+}
+.wrapper-load-video__form {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  & textarea {
+    resize: none;
+    height: 100px !important;
+  }
+}
+.wrapper-load-video__wrapper-video__video {
+  border: 1px solid #c2c2c2;
+  padding: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  background-image: url("/loadvideo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  text-align: center;
+  & button {
+    margin-top: 5px;
+  }
+}

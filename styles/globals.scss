@@ -1,4 +1,7 @@
 @import "./mixins/responsive.scss";
+@import "./styles.global.width.scss";
+@import "./styles.global.padding.scss";
+@import "./styles.global.aligns.scss";
 html,
 body {
   padding: 0;
@@ -45,4 +48,10 @@ i[data-name="icon-video"] {
 
 .react-tooltip {
   z-index: 9999;
+}
+
+hr {
+  height: 0.5px;
+  border: none;
+  background-color: #ccc;
 }

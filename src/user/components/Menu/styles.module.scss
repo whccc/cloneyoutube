@@ -1,36 +1,27 @@
-$color-white: #fff;
-.wrapper-menu {
-  position: fixed;
-  background-color: $color-white;
-  z-index: 2;
-  height: 100%;
-  width: 200px;
-  &::before {
-    content: "";
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: calc(100vw - 200px);
-    position: fixed;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+.wrapper-user {
+  text-align: center;
+  & img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
   }
-  & ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    & li {
-      border-bottom: 0.5px solid #ccc;
-      & a {
-        padding: 10px;
-        display: block;
-        cursor: pointer;
-        &:hover {
-          opacity: 0.9;
-        }
-        & i {
-          margin-right: 20px;
-        }
-      }
+  & img,
+  & h1 {
+    transition: all ease-in-out 0.5s;
+  }
+}
+
+.wrapper-menu.hidden-menu {
+  .wrapper-user {
+    & h1 {
+      opacity: 0;
+      position: absolute;
+      left: -9999px;
+    }
+    & img {
+      width: 30px;
+      height: 30px;
     }
   }
 }

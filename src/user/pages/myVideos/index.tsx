@@ -10,7 +10,7 @@ const MyVideos = () => {
       <Layout>
         <LateralMenuAndContent>
           <MenuUser />
-          <div className={styles["wrapper-content-videos"]}>
+          <div className={`${styles["wrapper-content-videos"]} w-100`}>
             <CardPreviewVideo />
             <CardPreviewVideo />
             <CardPreviewVideo />

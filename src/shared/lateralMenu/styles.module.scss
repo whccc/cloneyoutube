@@ -28,10 +28,13 @@ $color-white: #fff;
     margin: 0;
     & li {
       border-bottom: 0.5px solid #ccc;
+      & a,
+      & label {
+        cursor: pointer;
+      }
       & a {
         padding: 10px;
         display: block;
-        cursor: pointer;
         &:hover {
           opacity: 0.9;
         }
